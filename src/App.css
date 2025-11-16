@@ -1,7 +1,14 @@
 @font-face {
-  font-family: 'Satoshi';
-  src: url('/fonts/Satoshi-Light.woff') format('woff');
+  font-family: 'Satoshi-Light';
+  src: url('/Spacekit-Project/Fonts/Satoshi-Light.woff') format('woff');
   font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi-Black';
+  src: url('/Spacekit-Project/Fonts/Satoshi-Black.woff') format('woff');
+  font-weight: 900;
   font-style: normal;
 }
 
