@@ -1,0 +1,312 @@
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+a {
+  color:  black;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  /* display: flex; */
+  /* align-items: center; */
+  overflow-x: hidden;
+   font-family: "Satoshi", sans-serif;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-image: url('./assets//mainbg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main button:hover {
+  border-bottom: 2px solid orange;
+}
+
+header {
+  position: absolute;
+  top: 20px;
+  left: 45px;
+  width: 90%;
+  padding: 8px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.3);
+  /* white with 30% opacity */
+  backdrop-filter: blur(10px);
+  /* optional: adds a frosted glass effect */
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  flex-wrap: nowrap;
+  text-align: center;
+  height: 4rem;
+}
+
+#logo {
+  margin-left: 20px;
+  transition: 0.7s ease;
+  cursor: pointer;
+}
+
+#logo:hover {
+  transform: translateY(-2px);
+  color: black;
+}
+
+.logo-sec {
+  height: auto;
+  text-align: left;
+  width: auto;
+  /* background: yellow; */
+
+
+  font-family: Satoshi;
+  font-size: 1.1rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+.link {
+  height: auto;
+  padding: 10px;
+  width: auto;
+  /* background: yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  /* color: pink; */
+  font-family: Satoshi;
+  font-size: 1.1rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+
+}
+
+.link li {
+  transition: 0.7s ease;
+  cursor: pointer;
+
+}
+
+.link li:hover {
+  transform: translateY(-2px);
+  color: black;
+}
+
+.link button {
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.Hero-heading {
+  height: auto;
+  width: 100%;
+  /* background-color: aquamarine; */
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding: 20px; */
+  /* align-items: center; */
+}
+
+.Hero-heading button {
+  padding: 10px;
+  width: 20%;
+  border-radius: 20px;
+  /* background-color: yellow; */
+  color: gray;
+  transition: 2s ease;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-weight: 500;
+  border: none;
+}
+
+.Hero-heading button:hover {
+  /* width: 5%; */
+  border: none;
+}
+
+.content {
+  width: 90%;
+  /* background-color: brown; */
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.content img {
+  width: 11%;
+  animation: rotate 10s linear infinite;
+  transition: 1s ease;
+
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.content img:hover {
+  scale: 0.7;
+}
+
+.intro {
+  width: 50%;
+  text-align: left;
+  font-family: satoshi;
+  font-weight: 100;
+
+}
+
+.intro h1 {
+  font-size: clamp(2rem, 5vw, 5rem);
+}
+.menu{
+  display: none;
+  /* background-color: aqua; */
+  
+}
+.resp-nav {
+  display: none;
+  transition: all 0.4s ease-in-out;
+}
+
+
+@media (max-width: 800px) {
+ .main{
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+ }
+ 
+  header{
+    margin: 0 auto;
+    width: 90%;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+   
+    
+  }
+  .link {
+    display: none;
+  }
+  .menu{
+  display: flex;
+   min-width: 2rem;  
+      /* margin-right: 3rem; */
+  }
+  .menu img{
+    width:2rem;
+
+  }
+
+    .resp-nav {
+    font-family: satoshi;
+    width: 95%;
+    /* margin-left: 4.5rem; */
+    position: absolute;
+    margin: 0 auto;
+    top: 6.8rem;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    /* border: 2px solid black; */
+    text-align: center;
+    padding: 10px; display: none;
+  transition: all 0.4s ease-in-out;
+  pointer-events: auto;
+  z-index: 9999;
+  }
+.resp-nav.active {
+  display: block;
+}
+  .resp-nav li {
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+
+  .resp-nav button {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  
+.Hero-heading{
+  width: 100%;
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aquamarine; */
+  position: absolute;
+  top: 60%;
+  left: 0;
+}
+  .content{
+ 
+  /* background-color: aquamarine; */
+ 
+  text-align: center;
+}
+#roller{
+  display: none;
+}
+.intro{
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.intro h1{
+  /* font-size: 2.6rem; */
+  font-size: clamp(1em , 10vw, 3rem);
+}
+.Hero-heading button {
+  padding: 20px 20px;
+  font-size: 1rem;
+  width: auto;
+  border-radius: 20px;
+  /* background-color: yellow; */
+  color: gray;
+  transition: 2s ease;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-weight: 500;
+  border: none;
+}
+}
