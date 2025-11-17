@@ -20,7 +20,7 @@ function Hero() {
                 duration: 2,
                 scrollTrigger: {
                     trigger: ".topic h2", // ✅ more specific
-                    start: "top 50%",     // ✅ triggers when h2 reaches 70% of viewport height
+                    start: "top 70%",     // ✅ triggers when h2 reaches 70% of viewport height
                     // toggleActions: "play none none reverse",
                     // markers: true // optional: shows visual markers for debugging
                 }
@@ -31,7 +31,7 @@ function Hero() {
                 duration: 1,
                 scrollTrigger: {
                     trigger: ".hero-heading h1", // ✅ more specific
-                    start: "top 50%",     // ✅ triggers when h2 reaches 70% of viewport height
+                    start: "top 70%",     // ✅ triggers when h2 reaches 70% of viewport height
                     // toggleActions: "play none none reverse",
                     // markers: true // optional: shows visual markers for debugging
                 }
