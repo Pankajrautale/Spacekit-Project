@@ -17,7 +17,7 @@ function Footer() {
                 duration: 1,
                 scrollTrigger: {
                     trigger: ".col ", 
-                    start: "top 50%",     
+                    start: "top 70%",     
                     
                 }
             });
