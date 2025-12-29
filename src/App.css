@@ -122,6 +122,10 @@ header {
   border-radius: 8px;
   border: none;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .Hero-heading {
@@ -304,6 +308,7 @@ header {
   font-size: clamp(1em , 10vw, 3rem);
 }
 .Hero-heading button {
+  display: flex;
   padding: 20px 20px;
   font-size: 1rem;
   width: auto;

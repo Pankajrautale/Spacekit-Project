@@ -1,4 +1,5 @@
 import React, { useLayoutEffect, useState } from 'react';
+import Snowfall from 'react-snowfall'
 import './App.css';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -81,7 +82,7 @@ function App() {
 
     <section className='main'>
 
-
+<Snowfall />
       <header>
         <div className="logo-sec">
           <img id="logo" src={Logo} alt="Logo" />

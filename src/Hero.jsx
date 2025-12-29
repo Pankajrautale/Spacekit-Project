@@ -9,6 +9,7 @@ import Lamps from './assets/sec-pic.png'
 import Book from './assets/book.png'
 import Bag2 from './assets/bag2.png'
 import Rarrow from './assets/rightarrow.png'
+import Snowfall from 'react-snowfall'
 // gsap.registerPlugin(ScrollTrigger);
 
 function Hero() {
@@ -20,7 +21,7 @@ function Hero() {
                 duration: 2,
                 scrollTrigger: {
                     trigger: ".topic h2", // ✅ more specific
-                    start: "top 50%",     // ✅ triggers when h2 reaches 70% of viewport height
+                    start: "top 70%",     // ✅ triggers when h2 reaches 70% of viewport height
                     // toggleActions: "play none none reverse",
                     // markers: true // optional: shows visual markers for debugging
                 }
@@ -31,7 +32,7 @@ function Hero() {
                 duration: 1,
                 scrollTrigger: {
                     trigger: ".hero-heading h1", // ✅ more specific
-                    start: "top 50%",     // ✅ triggers when h2 reaches 70% of viewport height
+                    start: "top 70%",     // ✅ triggers when h2 reaches 70% of viewport height
                     // toggleActions: "play none none reverse",
                     // markers: true // optional: shows visual markers for debugging
                 }
@@ -42,7 +43,7 @@ function Hero() {
     }, []);
     return (
         <>
-            <section className='Hero'>
+            <section className='Hero'><Snowfall   color="grey"/>
                 <div className="loop"> <marquee>
                 Designed for your everyday adventures 
                       <span> . </span>  Designed for your everyday adventures 

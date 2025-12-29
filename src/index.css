@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "Satoshi";
   src: url("/Fonts/Satoshi-Light.woff") format("woff");
@@ -6,6 +5,18 @@
   font-display: swap;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Satoshi", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }

@@ -12,13 +12,13 @@ function Footer() {
     useEffect(() => {
         let ctx = gsap.context(() => {
             gsap.from(".Footer-sec .col", {
-                y: 30,
+                y: 20,
                 opacity: 0,
-                duration: 1,
+                duration: 0.9,
                 scrollTrigger: {
-                    trigger: ".col ", 
-                    start: "top 50%",     
-                    
+                    trigger: ".col ",
+                    start: "top 80%",
+                    // markers:true,
                 }
             });
         })
@@ -67,11 +67,11 @@ function Footer() {
                     </div>
                 </div>
                 <div className="social-link">
-                    <img src={Twitter} />
-                    <img src={Fb} />
-                    <img src={Insta} />
-                    <img src={Github} />
-
+                    <a href='https://x.com/'><img src={Twitter} />  </a>
+                    <a href='https://www.facebook.com/'><img src={Fb} />  </a>
+                    <a href='https://www.instagram.com/'><img src={Insta} />  </a>
+                    <a href='https://github.com/'><img src={Github} />  </a>
+                    {/* <a href='#'><img src={Twitter} />  </a> */}
                 </div>
                 <div className="copyRight">
                     <h2> License   |    Style Guide   |   Customize</h2>
@@ -79,7 +79,7 @@ function Footer() {
                 <div className="designer">
                     <h3>Copyright ©
 
-                        Design & Developed by Pankaj Rautela
+                        Developed by Pankaj Rautela
 
                     </h3>
                 </div>
