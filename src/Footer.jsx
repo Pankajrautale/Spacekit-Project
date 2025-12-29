@@ -16,9 +16,15 @@ function Footer() {
                 opacity: 0,
                 duration: 0.9,
                 scrollTrigger: {
+<<<<<<< HEAD
                     trigger: ".col ",
                     start: "top 80%",
                     // markers:true,
+=======
+                    trigger: ".col ", 
+                    start: "top 70%",     
+                    
+>>>>>>> 2de4716ff6140663c627d03c7ac2888a70eb7d0f
                 }
             });
         })
