@@ -8,7 +8,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
 
 
-      <BrowserRouter  basename="/Spacekit-Project">
+    <BrowserRouter basename="/Spacekit-Project">
       <Routing />
     </BrowserRouter>
   </StrictMode>,

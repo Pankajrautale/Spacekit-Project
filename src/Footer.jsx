@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
-import { gsap } from 'gsap'; import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 import './Footer.css'
 import Logo from './assets/logo.png'
@@ -14,23 +15,19 @@ function Footer() {
             gsap.from(".Footer-sec .col", {
                 y: 20,
                 opacity: 0,
-                duration: 0.9,
+                //   duration: 0.9,
                 scrollTrigger: {
-<<<<<<< HEAD
-                    trigger: ".col ",
-                    start: "top 80%",
-                    // markers:true,
-=======
-                    trigger: ".col ", 
-                    start: "top 70%",     
-                    
->>>>>>> 2de4716ff6140663c627d03c7ac2888a70eb7d0f
+                    trigger: ".Footer-sec", // trigger whole footer
+                    start: "top 70%",       // animation starts when footer hits 70% of screen
+                    toggleActions: "play none none none",
+                    // markers: true, // use this for debugging
                 }
             });
-        })
-        return () => ctx.revert();
+        });
 
-    }, [])
+        return () => ctx.revert();
+    }, []);
+
     return (
         <>
             <section className='Footer-sec'>

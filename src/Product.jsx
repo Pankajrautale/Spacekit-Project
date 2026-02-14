@@ -22,7 +22,7 @@ function Product() {
                 ease: "power1.out",
                 scrollTrigger: {
                     trigger: ".box",   // 👈 target this section only
-                    start: "top 80%",
+                    // start: "top 80%",
                     //   end: "bottom 60%",
                     //   toggleActions: "play none none reverse",
                     // 👈 optional, shows start/end markers
